@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>The Chunky Cat Cafe</title>
+  </head>
+
+  <body>
+    <header class="bg-light">
+      <div class="container py-3">
+        <!--es una clase de Bootstrap que agrega un espaciado (padding) vertical a un elemento. En este caso, "py-3" agrega un espaciado en la parte superior e inferior (padding vertical) del elemento que tiene esta clase (BUSCAR NOTA EN CUADERNO "HEADER BOOTSTRAP").-->
+        <div class="d-flex justify-content-between align-items-center">
+          <!--en un código HTML5 utilizando Bootstrap se refiere a una combinación de clases que se utilizan para controlar el diseño y la alineación de los elementos contenidos dentro de un contenedor (BUSCAR NOTA EN CUADERNO "HEADER ALINEAR BOOTSTRAP").-->
+          <img
+            src="./logo trans2.png"
+            alt="The Chunky Cat Cafe"
+            width="300px"
+          />
+          <nav>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nuestroequipo.html">Conócenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adoptaprueba.html">Adopta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menú</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contáctanos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container py-4">
+        <h1 class="text-center">Cat Cafe, Boutique y Refugio de Gatos.</h1>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./pagina principal1.jpg"
+                class="d-block w-100"
+                alt="carrusel1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./pagina principal2A.jpg"
+                class="d-block w-100"
+                alt="carrusel2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./pagina principal3A.jpg"
+                class="d-block w-100"
+                alt="carrusel3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="py-4">
+          <!--Cuando se aplica la clase "py-4" a un elemento, se le agregará un espaciado (padding) en la parte superior e inferior del elemento. La cantidad de espaciado se controla mediante el número después de "py-" (en este caso, "4"), que especifica la cantidad de unidades de espaciado (por lo general, en píxeles) que se agregarán verticalmente al elemento.-->
+          <h1 class="text-center">¡Bienvenidos a The Chunky Cat Cafe!</h1>
+          <!--Cuando se aplica la clase "text-center" a un elemento, el texto dentro de ese elemento se alinea horizontalmente al centro del elemento.El texto se distribuirá de manera uniforme en el centro horizontal del elemento.-->
+          <p class="text-center">
+            Somos mucho más que una cafetería; somos un refugio acogedor para
+            gatos y un lugar donde las historias de amor y adopción se hacen
+            realidad.
+          </p>
+          <h2 class="text-center">Misión</h2>
+          <p class="text-center">
+            Nuestra misión es crear un ambiente relajado y cálido para los
+            amantes de los felinos, donde puedan disfrutar de deliciosos
+            manjares mientras interactúan con gatos cariñosos que están buscando
+            un hogar amoroso.
+          </p>
+          <h2 class="text-center">
+            Aquí cada taza de café viene con un extra especial: la oportunidad
+            de cambiar la vida de un gato necesitado.
+          </h2>
+        </div>
+      </div>
+      <!--diferencia entre poner "py-4" y "container py-4" la primera se aplica directamente a un elemento específico para agregar un espaciado vertical a ese elemento, mientras que la segunda se aplica a un contenedor principal para agregar un espaciado vertical a todo el contenido contenido dentro de ese contenedor, lo que es especialmente útil para crear un espaciado uniforme en secciones específicas de la página.-->
+      <div class="container py-4">
+        <!-- se aplica a un contenedor principal para agregar un espaciado vertical a todo el contenido contenido dentro de ese contenedor, lo que es especialmente útil para crear un espaciado uniforme en secciones específicas de la página.-->
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <!--El resultado de utilizarlo asi será que la columna ocupará un tercio del ancho disponible en pantallas medianas o más grandes y tendrá un espaciado en la parte inferior, lo que ayuda a crear un diseño flexible y con un espaciado uniforme entre las columnas (para ver significado individual revisar cuaderno de notas).-->
+            <div class="card">
+              <!--Cuando se aplica a un elemento, Bootstrap aplica estilos predeterminados para crear una tarjeta con bordes, sombras y espaciado adecuado para que el contenido se presente de manera clara y destacada. Las tarjetas de Bootstrap también se utilizan en combinación con otras clases para personalizar su apariencia y alinear elementos internos, como encabezados, imágenes, texto y botones (ver notas de cuarderno).-->
+              <img src="./cat-cafe.jpg" class="card-img-top" alt="menu" />
+              <div class="card-body">
+                <h1 class="card-title">Menú</h1>
+                <p class="card-text">"Tradicional sabor casero"</p>
+                <a href="menu.html" class="btn btn-primary">Conoce Más</a>
+                <!--Esta clase se refiere a un botón. Cuando se aplica esta clase a un elemento (por ejemplo, un enlace <a> o un botón <button>), Bootstrap lo convierte en un botón estilizado (ver notas de cuaderno).-->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="./los adoptables1.jpeg"
+                class="card-img-top"
+                alt="los adoptables"
+                height="280px"
+              />
+              <div class="card-body">
+                <h1 class="card-title">En busca de un hogar</h1>
+                <p class="card-text">"Adoptando un gato a la vez"</p>
+                <a href="adoptaprueba.html" class="btn btn-primary">Conoce Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="./equipo de trabajo1.jpg"
+                class="card-img-top"
+                alt="equipo de trabajo"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Equipo de trabajo</h1>
+                <p class="card-text">"Conócenos"</p>
+                <a href="nuestroequipo.html" class="btn btn-primary"
+                  >Conoce Más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+      <!--Cuando se aplican estas clases a un elemento, se creará una sección con un color de fondo claro, el texto dentro de la sección estará centrado horizontalmente y habrá un espaciado vertical de 3 unidades en la parte superior e inferior del contenido dentro de la sección.-->
+      <p>
+        Página hecha por Johanna Alexis Lopez Vazquez / Trabajo Final JA 2023
+      </p>
+      <p>"Parte de un mundo ficticio que algún día se volverá realidad"</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
